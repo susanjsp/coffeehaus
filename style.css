@@ -11,7 +11,6 @@
 h1, h2 {
 	color: white;
 	font-size: 5em;
-	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
 	letter-spacing: 15px;
 }
@@ -21,14 +20,24 @@ h2 {
 	text-transform: uppercase;
 }
 body {
-	font-family: Helvetica;
+	font-family: 'Raleway', sans-serif;	
 	margin: 0;
 	text-align: center;
+
 }
-#container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	flex-direction: column;
+.enquire {
+	font-size: 1em;
+	letter-spacing: 2px;
+	padding: 10px 10px;
+	border-radius: 5px;
+	border: 1px solid white;
+	margin-top: 50px;
+}
+.enquire:hover {
+	color: #808080;
+	border-color: #808080;
+}
+a:link {
+	color: white;
+	text-decoration: none;
 }
