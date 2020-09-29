@@ -5,6 +5,17 @@
 	height: 100vh;
 	
 }
+h1 {
+	color: white;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 5em;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	letter-spacing: 15px;
+}
 body {
 	font-family: Helvetica;
 	margin: 0;
