@@ -1,8 +1,18 @@
 <html>
 <head>
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="style.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;1,500&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="order-html">
 	<h1>How would you like your coffee?</h1>
 
 	<form action="" method="PUSH">
@@ -10,19 +20,19 @@
 		<!-- Drink order -->
 		<section class="drink-order">
 			<span>Drink: </span>
-			<input id="latte" name="drink" type="radiohead" value="latte">
+			<input id="latte" name="drink" type="radio" value="latte">
 			<label for="latte">Latte</label>
-			<input id="long-black" name="drink" type="radiohead" value="long-black">
+			<input id="long-black" name="drink" type="radio" value="long-black">
 			<label for="long-black">Long Black</label>
-			<input id="flat-white" name="drink" type="radiohead" value="flat-white">
+			<input id="flat-white" name="drink" type="radio" value="flat-white">
 			<label for="flat-white">Flat White</label>
-			<input id="mocha" name="drink" type="radiohead" value="mocha">
+			<input id="mocha" name="drink" type="radio" value="mocha">
 			<label for="mocha">Mocha</label>
-			<input id="espresso" name="drink" type="radiohead" value="espresso">
+			<input id="espresso" name="drink" type="radio" value="espresso">
 			<label for="espresso">Espresso</label>
-			<input id="macchiato" name="drink" type="radiohead" value="macchiato">
+			<input id="macchiato" name="drink" type="radio" value="macchiato">
 			<label for="macchiato">Macchiato</label>
-			<input id="affogato" name="drink" type="radiohead" value="affogato">
+			<input id="affogato" name="drink" type="radio" value="affogato">
 			<label for="affogato">Affogato</label>
 		</section>
 
@@ -31,36 +41,36 @@
 			<span>
 				<label for="sugar">Sugar level: </label>
 			</span>
-			<input id="sugar" name="sugar" type="number" min="0.5" max="2">
+			<input id="sugar" name="sugar" type="number" min="0" max="2" step="0.5">
 		</section>
 
 		<!-- Hot/cold -->
 		<section class="hot-cold-order">
 			<span>Hot or Cold? </span>
-				<input id="hot" name="hot-cold" type="radiohead" value="hot">
+				<input id="hot" name="hot-cold" type="radio" value="hot">
 				<label for="hot">Hot</label>
-				<input id="cold" name="hot-cold" type="radiohead" value="cold">
+				<input id="cold" name="hot-cold" type="radio" value="cold">
 				<label for="cold">Cold</label>
 		</section>
 		
 		<!-- Milk: full cream, skim, zymil, soy, oat, rice, almond -->
 		<section class="milk-order">
 			<span>Milk: </span>
-				<input id="full-cream" name="milk" type="radiohead" value="full-cream">
+				<input id="full-cream" name="milk" type="radio" value="full-cream">
 				<label for="full-cream">Full Cream</label>
-				<input id="skim" name="milk" type="radiohead" value="skim">
+				<input id="skim" name="milk" type="radio" value="skim">
 				<label for="skim">Skim</label>
-				<input id="zymil" name="milk" type="radiohead" value="zymil">
+				<input id="zymil" name="milk" type="radio" value="zymil">
 				<label for="zymil">Zymil</label>
-				<input id="soy" name="milk" type="radiohead" value="soy">
+				<input id="soy" name="milk" type="radio" value="soy">
 				<label for="soy">Soy</label>
-				<input id="almond" name="milk" type="radiohead" value="almond">
+				<input id="almond" name="milk" type="radio" value="almond">
 				<label for="almond">Almond</label>
-				<input id="oat" name="milk" type="radiohead" value="oat">
+				<input id="oat" name="milk" type="radio" value="oat">
 				<label for="oat">Oat</label>
-				<input id="rice" name="milk" type="radiohead" value="rice">
+				<input id="rice" name="milk" type="radio" value="rice">
 				<label for="rice">Rice</label>
-				<input id="none" name="milk" type="radiohead" value="none">
+				<input id="none" name="milk" type="radio" value="none">
 				<label for="none">N/A</label>
 		</section>
 
@@ -94,6 +104,13 @@
 			</datalist>
 		</section>
 		
+		<!-- Place order -->
+		<section class="submit">
+			<span>
+				<input type="submit" value="Place order">
+			</span>
+		</section>
+
 	</form>
 </body>
 </html>
