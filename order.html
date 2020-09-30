@@ -78,6 +78,22 @@
 			<span>Add a personalised note for a loved one: </span>
 			<input id="" name="note" type="textarea" rows="5" cols="50" maxlength="50">
 		</section>
+
+		<!-- Add location -->
+		<section class="location-order">
+			<label for="location">Where are you located?</label>
+			<input id="location" name="location" list="cities">
+
+			<datalist id="cities">
+				<option value="brisbane">Brisbane</option>
+				<option value="sydney">Sydney</option>
+				<option value="melbourne">Melbourne</option>
+				<option value="perth">Perth</option>
+				<option value="adelaide">Adelaide</option>
+				<option value="tasmania">Tasmania</option>
+			</datalist>
+		</section>
+		
 	</form>
 </body>
 </html>
