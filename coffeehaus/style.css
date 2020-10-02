@@ -62,13 +62,9 @@ a:visited {
 article {
 	background-image: url("images/blog-post.jpeg") ;
 	background-size: cover;
-	background-opacity: 0.5;
 	height: 91vh;
 	align-items: center;
 	justify-content: center;
-}
-#left {
-
 }
 #right {
 	display: flex;
@@ -103,7 +99,20 @@ section {
 	margin-bottom: 25px;
 }
 
-@media (min-width: 768px) {
+@media tablet (min-width: 768px) {
 	article { 
 			display: flex; }
+}
+#order-html {
+	background-image: url("images/form-bkg.jpeg");
+	background-size: cover;
+
+}
+#order-form {
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 100vw;
+	height: 88vh;
+	color: #919191;
+	letter-spacing: 0.2em;
+	margin-bottom: 0;
 }
