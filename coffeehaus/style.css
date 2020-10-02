@@ -1,4 +1,16 @@
+html {
+	scroll-behavior: smooth;
+}
 
+nav {
+	background-color: black;
+	position: fixed;
+	width: 100vw;
+}
+#home {
+	display: float;
+	padding: 0.2vh 0 0.2vh 0;
+}
 
 #landing-page {
 	background-image: url("https://images.pexels.com/photos/4927238/pexels-photo-4927238.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
@@ -44,6 +56,38 @@ a:link {
 	color: white;
 	text-decoration: none;
 }
+a:visited {
+	color: white;
+}
+article {
+	background-image: url("images/blog-post.jpeg") ;
+	background-size: cover;
+	background-opacity: 0.5;
+	height: 91vh;
+	align-items: center;
+	justify-content: center;
+}
+#left {
+
+}
+#right {
+	display: flex;
+	flex-direction: column;
+	width: 70vw;
+	background-color: rgba(255, 255, 255, 0.2);
+	line-height: 3;
+	letter-spacing: 0.1em;
+	padding: 30px 20px 40px 30px;
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+#right h2 {
+	font-size: 36px;
+}
+#right h3 {
+	font-size: 30px;
+	line-height: 1.5;
+}
 
 .footer {
 	background-color: black;
@@ -57,4 +101,9 @@ ul {
 
 section {
 	margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+	article { 
+			display: flex; }
 }
