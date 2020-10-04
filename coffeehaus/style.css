@@ -88,11 +88,12 @@ article h5 {
 	padding-top: 5vh;
 }
 #commitment-page {
-	display: inline-flex;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
 	padding: 5vh 0;
+	height: 260vh;
 }
 #commitment-page h4, h5, p {
 	color: var(--med-brown);
@@ -100,6 +101,8 @@ article h5 {
 }
 #commitment-page h4 {
 	padding: 30px 0;
+	display: block;
+	width: 100vw;
 }
 #commitment-page h5 {
 	font-size: 2em;
@@ -107,8 +110,8 @@ article h5 {
 	font-weight: 400;
 }
 .cards {
-	width: 360px;
-	height: 350px;
+	width: 320px;
+	height: 340px;
 	padding: 20px;
 	border: solid 2px var(--med-brown);
 	border-radius: 10px;
@@ -137,18 +140,14 @@ li a:hover {
 @media (min-width: 768px) {
 	#commitment-page {
 		flex-direction: row;
+		flex-wrap: wrap;
+		height: 150vh;
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 991px) {
 	#commitment-page {
-		display: grid;
-		grid-template: 35vh 55vh / repeat(4, 450px);
-		overflow-x: scroll;
-	}
-	#commitment-page h4 {
-		grid-column-start: 1;
-		grid-column-end: 5;
+		align-items: flex-start;
 	}
 	
 }
