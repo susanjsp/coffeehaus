@@ -130,7 +130,7 @@ article h5 {
 	align-items: center;
 	justify-content: space-around;
 	padding: 5vh 0;
-	height: 300vh;
+	height: 280vh;
 }
 #commitment-page h4, h5, p {
 	color: var(--med-brown);
@@ -178,12 +178,23 @@ li a:hover {
 	#commitment-page {
 		flex-direction: row;
 		flex-wrap: wrap;
-		height: 150vh;
+		height: 100vh;
 	}
 	#blog-head h4 {
 		align-self: start;
-		margin-top: -300px;
+		margin-top: -350px;
 		margin-left: 50px;
+		font-size: 3.5em;
+		max-width: 300px;
+	}
+	#blog-para {
+		padding: 0 50px;
+		line-height: 1.5em;
+		font-size: 1.5em;
+	}
+	#blog-para h5 {
+		font-weight: 400;
+		font-size: 1.7em;
 	}
 }
 
