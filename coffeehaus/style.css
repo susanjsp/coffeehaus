@@ -94,17 +94,20 @@ article h5 {
 	justify-content: space-around;
 	padding: 5vh 0;
 }
-#commitment-page h4, h3, p {
+#commitment-page h4, h5, p {
 	color: var(--med-brown);
 	font-weight: 200;
 }
-#commitment-page h3 {
-	font-size: 2em;
+#commitment-page h4 {
 	padding: 30px 0;
+}
+#commitment-page h5 {
+	font-size: 2em;
+	padding:10px 0;
 	font-weight: 400;
 }
 .cards {
-	width: 380px;
+	width: 360px;
 	height: 350px;
 	padding: 20px;
 	border: solid 2px var(--med-brown);
@@ -126,7 +129,6 @@ footer {
 @media (min-width: 768px) {
 	#commitment-page {
 		flex-direction: row;
-		flex-wrap: wrap;
 	}
 }
 
