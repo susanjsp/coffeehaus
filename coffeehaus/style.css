@@ -199,6 +199,26 @@ li a:hover {
 }
 
 @media (min-width: 991px) {
+	#blog-head {
+		width: 50%;
+		height: 100vh;
+	}
+	#blog-para {
+		width: 50%;
+		height: 100vh;
+		margin: 0;
+		padding: 0 30px;
+		box-shadow: none;
+	}
+	#blog-para h5 {
+		padding-top: 80px;
+	}
+	article {
+		display: flex-box;
+		flex-wrap: wrap;
+		height: 100vh;
+	}
+
 	#commitment-page {
 		align-items: flex-start;
 	}
