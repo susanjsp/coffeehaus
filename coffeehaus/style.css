@@ -1,3 +1,4 @@
+/*INDEX PAGE */
 :root {
 	--med-brown: #2b1d0e;
 	--dark-brown: #181008;
@@ -45,7 +46,7 @@ a:visited {
 ul {
 	list-style: none;
 }
-
+/* NAV PAGE*/
 nav {
 	position: fixed;
 	width: 100%;
@@ -54,6 +55,7 @@ nav {
 	z-index: 1;
 	top: 0;
 }
+/*LANDING PAGE*/
 button {
 	background-color: transparent;
 	border: solid 1px white;
@@ -79,6 +81,7 @@ button {
 	height: 100vh;
 	width: 100%;
 }
+/*BLOG PAGE LEFT*/
 #blog-head {
 	background-image: url("images/commitment.jpeg");
 	background-size: cover;
@@ -96,6 +99,7 @@ button {
 	margin-top: -180px;
 	margin-left: 20px;
 	}
+/*BLOG PAGE RIGHT */
 #blog-para {
 	background-image: url("images/blog-post.jpeg");
 	background-position: center;
@@ -124,6 +128,7 @@ article h4 {
 article h5 {
 	padding-top: 5vh;
 }
+/* COMMITMENT CARDS */
 #commitment-page {
 	display: flex;
 	flex-direction: column;
@@ -157,7 +162,7 @@ article h5 {
 	justify-content: center;
 	align-items: center;
 }
-
+/* FOOTER */
 footer {
 	background-color: var(--dark-brown);
 	width: 100%;
@@ -173,7 +178,7 @@ li a:hover {
 	border-bottom: solid 1px #c5c3bd;
 	transition: border-bottom 1s ease-out;
 }
-  
+/* @MEDIA FOR TABLETS */
 @media (min-width: 768px) {
 	#commitment-page {
 		flex-direction: row;
@@ -197,7 +202,7 @@ li a:hover {
 		font-size: 1.7em;
 	}
 }
-
+/* @MEDUA FOR DESKTOP */
 @media (min-width: 991px) {
 	#blog-head {
 		width: 50%;
@@ -224,3 +229,53 @@ li a:hover {
 	}
 	
 }
+
+/* MENU PAGE*/
+#menu-header {
+	width: 100%;
+	position: relative;
+	top: 9vh;
+}
+#menu-header h1 {
+	color: var(--med-brown);
+}
+#menu-items {
+	display: grid;
+	width: 100%;
+	height: 105vh;
+	grid-template: repeat(3,240px) / 1fr 1fr 1fr;
+	justify-content: center;
+	align-content: center;
+	position: relative;
+	top: 9vh;
+}
+#menu-items p {
+	color: var(--cream-color);
+
+}
+.menu-card {
+	background-color: black;
+	overflow: hidden;
+}
+.menu-card:hover {
+	filter: grayscale(1);
+	transition: filter 0.5s ease-in;
+}
+.text-block {
+	display: flex;
+	position: absolute;
+	top: 0;
+	padding: 10px;
+	color: var(--cream-color);
+}
+.text-block p {
+	justify-content: flex-end;
+}
+.menu-card:hover .text-block {
+
+}
+footer {
+	position: relative;
+	top: 9vh;
+}
+
