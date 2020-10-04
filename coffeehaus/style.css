@@ -121,11 +121,19 @@ article h5 {
 footer {
 	background-color: var(--dark-brown);
 	width: 100%;
-}
-.footer-item {
-	display: inline-block;
+	font-size: 0.75em;
+	color: #c5c3bd;
 }
 
+li {
+	display: inline-block;
+	padding: 5vh 5vw;
+}
+li a:hover {
+	border-bottom: solid 1px #c5c3bd;
+	transition: border-bottom 1s ease-out;
+}
+  
 @media (min-width: 768px) {
 	#commitment-page {
 		flex-direction: row;
